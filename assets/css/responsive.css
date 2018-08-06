@@ -1,0 +1,1873 @@
+/*
+Viewport Sizes
+1920
+1885
+1875
+1887
+1787
+1360
+1280
+1200
+1180
+1024
+980
+800
+768
+667
+640
+600
+568
+480
+414
+375
+360
+320
+*/
+
+/* Responsive */
+
+.cd-section:nth-of-type(2) .cd-half-block:first-of-type, 
+.cd-section:nth-of-type(3) .cd-half-block:first-of-type, 
+.cd-section:nth-of-type(4) .cd-half-block:first-of-type, 
+.cd-section:nth-of-type(5) .cd-half-block:first-of-type, 
+.cd-section:nth-of-type(6) .cd-half-block:first-of-type, 
+.cd-section:nth-of-type(7) .cd-half-block:first-of-type {
+  background-size: cover !important;
+}
+.page-link .pagination li {
+  margin-right: 15px;
+}
+
+
+@media only screen and (min-width: 768px){
+  body::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop';
+  }
+  .cd-section {
+    height: 100vh;
+  }
+
+  .cd-half-block {
+    height: 100vh !important;
+    width: 50%;
+    position: absolute;
+    top: 0;
+  }
+  .cd-block {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+  }
+  .cd-section:first-of-type .cd-block {
+    visibility: visible;
+  }
+  .cd-block > * {
+    visibility: visible;
+  }
+  .cd-vertical-nav {
+    display: block;
+  }
+  .cd-half-block:nth-of-type(2){
+    padding: 4% !important;
+  }
+
+  .cd-section:nth-of-type(even) .cd-half-block:first-of-type, .cd-section:nth-of-type(odd) .cd-half-block:nth-of-type(2) {
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  .cd-section:nth-of-type(odd) .cd-half-block:first-of-type, .cd-section:nth-of-type(even) .cd-half-block:nth-of-type(2) {
+    right: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  .cd-section:nth-of-type(2) .cd-half-block:first-of-type,
+  .cd-section:nth-of-type(3) .cd-half-block:first-of-type,
+  .cd-section:nth-of-type(4) .cd-half-block:first-of-type,
+  .cd-section:nth-of-type(5) .cd-half-block:first-of-type,
+  .cd-section:nth-of-type(6) .cd-half-block:first-of-type,
+  .cd-section:nth-of-type(7) .cd-half-block:first-of-type {
+    background-size: cover !important;
+  }
+  .cd-section:first-of-type .cd-block {
+    height: 100vh !important;
+  }
+}
+
+
+@media only screen and (min-width: 2249px) and (max-width: 2560px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .overlay ul li a {
+    font-size: 24px;
+  }
+  .cd-section:nth-of-type(even) .cd-half-block:first-of-type, .cd-section:nth-of-type(odd) .cd-half-block:nth-of-type(2) {
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  .cd-section:nth-of-type(odd) .cd-half-block:first-of-type, .cd-section:nth-of-type(even) .cd-half-block:nth-of-type(2) {
+    right: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  .member-name{
+    display: block;
+  }
+  #portfolio .btn{
+    display: block; 
+  }
+  .contactform input {
+    width: 47%;
+  }
+  .contactform button{
+    margin: 60px 10px 0 0;
+  }
+
+}
+
+@media only screen and (min-width: 2048px) and (max-width: 2248px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .overlay ul li a {
+    font-size: 24px;
+  }
+  .contactform input {
+    width: 48%;
+  }
+  .contactform button{
+    margin: 60px 10px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 2247px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .overlay ul li a {
+    font-size: 24px;
+  }
+  .contactform input {
+    width: 48%;
+  }
+  .contactform button{
+    margin: 60px 10px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1788px) and (max-width: 1920px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .overlay ul li a {
+    font-size: 24px;
+  }
+  .contactform input {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1681px) and (max-width: 1787px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .overlay ul li a {
+    font-size: 24px;
+  }
+  .contactform input {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1680px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .overlay ul li a {
+    font-size: 24px;
+  }
+  .contactform input {
+    width: 48%;
+  }
+  .about-page .member {
+    max-width: 45%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .section-title{
+    padding-bottom: 10px;
+    font-size: 2.8rem;
+  }
+  .cd-section h1 {
+    font-size: 2.5rem;
+  }
+  .next-section {
+    padding-top: 100px;
+  }
+  .contactform input {
+    width: 47%;
+  }
+  .blog-single .commentform input {
+    width: 48.25%;
+  }
+  .contactform button{
+    margin: 26px 20px 0 0;
+  }
+  .section-title{
+    padding-bottom: 10px;
+    font-size: 3.06rem;
+  }
+  .section-description {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding-bottom: 55px;
+  }
+  .item-details{
+    font-size: 1em;
+    padding-top: 10px;
+    line-height: 25px;
+  }
+  .item-title{
+    font-size: 1rem;
+  }
+  .about-details .item{
+    padding-bottom: 35px;
+  }
+  .portfolio-details figure {
+    max-width: 45%;
+    height: 140px;
+  }
+  .entry-title{
+    font-size: .95rem;
+  }
+  .entry-text,.comment-content p {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+  .blog-details{
+    padding-right: 15px;
+  }
+  .member-name{
+    font-size: 1rem;
+  }
+  .contact-icon{
+    font-size: 2.18rem;
+  }
+  .address-details{
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  address p, span.mobile-no, .address-details a {
+    font-size: .9rem;
+    line-height: 20px;
+  }
+  .contactform input, .contactform textarea{
+    font-size: .7rem;
+    margin-bottom: 25px;
+  }
+
+  /* Service Page */
+  .service-page .section-description {
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  .service-page .service-details p, .service-page .our-success p{
+    font-size: 1rem;
+  }
+  .service-page .service-details .item{
+    padding-bottom: 25px;
+  }
+  .service-page .service-details .item p{
+    font-size: .9rem;
+    line-height: 22px;
+  }
+  .service-page .our-success{
+    padding-top: 35px;
+  }
+  .success-counter .item-icon{
+    font-size: 2.5em;
+    padding-bottom: 15px;
+  }
+  .other-services{
+    padding-top: 10px;
+  }
+  .list-items{
+    padding-top: 20px;
+  }
+  .list-items p{
+    font-size: .9rem;
+  }
+
+  /* About US */
+  .about-page .our-team{
+    padding-top: 40px;
+  }
+  .about-page .section-title{
+    font-size: 2.6rem;  
+  }
+  .about-page .section-description{
+    font-size: 1rem;   
+    padding-bottom: 35px;
+  }
+  .our-story p{
+    font-size: 1rem;
+  }
+  .about-page .about-details{
+    padding-top: 30px;
+  }
+  .about-page .item-details {
+    font-size: 0.9em;
+    padding-top: 8px;
+    line-height: 20px;
+  }
+  .about-page .member{
+    max-width: 44%;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-page blockquote{
+    font-size: 1.2rem;
+  }
+  .skills-details canvas{
+    height: 130px;
+    width: 130px;
+  }
+  .wpcf7-form-control-wrap textarea {
+    width: 70%;
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: 1281px) and (max-width: 1366px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .section-title{
+    padding-bottom: 10px;
+    font-size: 2.8rem;
+  }
+  .cd-section h1 {
+    font-size: 2.5rem;
+  }
+  .next-section {
+    padding-top: 30px;
+  }
+  .section-title{
+    padding-bottom: 10px;
+    font-size: 3.06rem;
+  }
+  .section-description {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding-bottom: 55px;
+  }
+  .item-details{
+    font-size: 1em;
+    padding-top: 10px;
+    line-height: 25px;
+  }
+  .item-title{
+    font-size: 1rem;
+  }
+  .about-details .item{
+    padding-bottom: 35px;
+  }
+  .portfolio-details figure {
+    max-width: 45%;
+    height: 140px;
+  }
+  .entry-title{
+    font-size: .95rem;
+  }
+  .entry-text,.comment-content p {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+  .blog-details{
+    padding-right: 15px;
+  }
+  .member-name{
+    font-size: 1rem;
+  }
+  .contact-icon{
+    font-size: 2.18rem;
+  }
+  .address-details{
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  address p, span.mobile-no, .address-details a {
+    font-size: .9rem;
+    line-height: 20px;
+  }
+  .contactform input, .contactform textarea{
+    font-size: .7rem;
+    margin-bottom: 25px;
+  }
+  .contactform button {
+    margin-top: 26px;
+  }
+  
+  /* Service Page */
+  .service-page   .section-description {
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  .service-page .service-details p, .service-page .our-success p{
+    font-size: 1rem;
+  }
+  .service-page .service-details .item{
+    padding-bottom: 25px;
+  }
+  .service-page .service-details .item p{
+    font-size: .9rem;
+    line-height: 22px;
+  }
+  .service-page .our-success{
+    padding-top: 35px;
+  }
+  .success-counter .item-icon{
+    font-size: 2.5em;
+    padding-bottom: 15px;
+  }
+  .other-services{
+    padding-top: 10px;
+  }
+  .list-items{
+    padding-top: 20px;
+  }
+  .list-items p{
+    font-size: .9rem;
+  }
+
+  /* About US */
+
+  .about-page .our-team{
+    padding-top: 30px;
+  }
+  .about-page .section-title{
+    font-size: 2.6rem;  
+  }
+  .about-page .section-description{
+    font-size: 1rem;   
+    padding-bottom: 35px;
+  }
+  .our-story p{
+    font-size: 1rem;
+  }
+  .about-page .about-details{
+    padding-top: 30px;
+  }
+  .about-page .item-details {
+    font-size: 0.9em;
+    padding-top: 8px;
+    line-height: 20px;
+  }
+  .about-page .member{
+    max-width: 44% !important;
+  }
+  .about-details .item{
+    padding-bottom: 30px;
+  }
+  .about-page blockquote{
+    font-size: 1.2rem;
+  }
+  .skills-details canvas{
+    height: 130px;
+    width: 130px;
+  }
+  .wpcf7-form-control-wrap textarea {
+    width: 65%;
+  }
+
+
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1280px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .section-title{
+    padding-bottom: 10px;
+    font-size: 2.8rem;
+  }
+  .cd-section h1 {
+    font-size: 2.5rem;
+  }
+  .next-section {
+    padding-top: 30px;
+  }
+  .section-title{
+    padding-bottom: 10px;
+    font-size: 3.06rem;
+  }
+  .section-description {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding-bottom: 55px;
+  }
+  .item-details{
+    font-size: 1em;
+    padding-top: 10px;
+    line-height: 25px;
+  }
+  .item-title{
+    font-size: 1rem;
+  }
+  .about-details .item{
+    padding-bottom: 35px;
+  }
+  .portfolio-details figure {
+    max-width: 45%;
+    height: 140px;
+  }
+  .entry-title{
+    font-size: .95rem;
+  }
+  .entry-text,.comment-content p{
+    font-size: 1rem;
+    line-height: 22px;
+  }
+  .blog-details{
+    padding-right: 15px;
+  }
+  .member-name{
+    font-size: 1rem;
+  }
+  .contact-icon{
+    font-size: 1.18rem;
+  }
+  .address-details{
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  address p, span.mobile-no, .address-details a {
+    font-size: .7rem;
+    line-height: 15px;
+  }
+  .contactform input, .contactform textarea{
+    font-size: .7rem;
+    margin-bottom: 25px;
+  }
+  .contactform button {
+    margin-top: 26px;
+  }
+
+  /* Service Page */
+  .service-page   .section-description {
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  .service-page .service-details p, .service-page .our-success p{
+    font-size: 1rem;
+  }
+  .service-page .service-details .item{
+    padding-bottom: 25px;
+  }
+  .service-page .service-details .item p{
+    font-size: 1rem;
+    line-height: 22px;
+  }
+  .service-page .our-success{
+    padding-top: 35px;
+  }
+  .success-counter .item-icon{
+    font-size: 2.5em;
+    padding-bottom: 15px;
+  }
+  .other-services{
+    padding-top: 10px;
+  }
+  .list-items{
+    padding-top: 20px;
+  }
+  .list-items p{
+    font-size: 1rem;
+  }
+
+
+  /* About US */
+  .about-page .our-team{
+    padding-top: 40px;
+  }
+  .about-page .section-title{
+    font-size: 2.6rem;  
+  }
+  .about-page .section-description{
+    font-size: 1rem;   
+    padding-bottom: 35px;
+  }
+  .our-story p{
+    font-size: 1rem;
+  }
+  .about-page .about-details{
+    padding-top: 30px;
+  }
+  .about-page .item-details {
+    font-size: 0.9em;
+    padding-top: 8px;
+    line-height: 20px;
+  }
+  .about-page .member{
+    max-width: 43% !important;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-page blockquote{
+    font-size: 1.2rem;
+  }
+  .skills-details canvas{
+    height: 130px;
+    width: 130px;
+  }
+
+
+  /* About US */
+  .about-page .our-team{
+    padding-top: 40px;
+  }
+  .about-page .section-title{
+    font-size: 2.6rem;  
+  }
+  .about-page .section-description{
+    font-size: 1rem;   
+    padding-bottom: 35px;
+  }
+  .our-story p{
+    font-size: 1rem;
+  }
+  .about-page .about-details{
+    padding-top: 30px;
+  }
+  .about-page .item-details {
+    font-size: 0.9em;
+    padding-top: 8px;
+    line-height: 20px;
+  }
+  .about-page .member{
+    max-width: 44%;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-page blockquote{
+    font-size: 1.2rem;
+  }
+  .skills-details canvas{
+    height: 130px;
+    width: 130px;
+  }
+  .wpcf7-form-control-wrap textarea {
+    width: 60%;
+  }
+
+
+}
+
+
+@media only screen and (min-width: 1181px) and (max-width: 1200px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .cd-section h1 {
+    font-size: 4.06rem;
+  }
+  .item-title{
+    font-size: 1.1em;
+  }
+  .item-details{
+    font-size: 1em;
+  }
+  .about-details .item{
+    padding-bottom: 25px;
+  }
+  .service-details .item{
+    padding-bottom: 25px; 
+  }
+  .section-description{
+    font-size: 1.1em;
+    line-height: 27px;
+    padding-bottom: 35px;
+  }
+  .portfolio-details figure{
+    max-width: inherit;
+    height: inherit;
+  }
+  .contact-icon{
+    font-size: 1.18rem;
+  }
+  .cd-vertical-nav {
+    display: block;
+  }
+  .cd-half-block:nth-of-type(2){
+    padding: 7%;
+  }
+  .address-details{
+    padding-top: 15px;
+  }
+  span.mobile-no{
+    font-size: .8em;
+  }
+  address p{
+    font-size: .8rem;
+  }
+  .section-title{
+    padding-bottom: 10px;
+  }
+
+
+  /* Service Page */
+  .service-page   .section-description {
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  .service-page .service-details p, .service-page .our-success p{
+    font-size: 1rem;
+  }
+  .service-page .service-details .item{
+    padding-bottom: 25px;
+    font-size: .9em;
+    max-width: 49%;
+  }
+  .service-page .service-details .item p{
+    font-size: .94em;
+    line-height: 18px;
+  }
+  .service-page .our-success{
+    padding-top: 35px;
+  }
+  .success-counter .item-icon{
+    font-size: 2.5em;
+    padding-bottom: 7px;
+  }
+  .success-counter .count{
+    font-size: 3em;
+  }
+  .other-services{
+    padding-top: 10px;
+  }
+  .list-items{
+    padding-top: 20px;
+  }
+  .list-items p{
+    font-size: .94em;
+    line-height: 18px;
+  }
+
+
+
+  /* About US */
+  .about-page .our-team{
+    padding-top: 40px;
+  }
+  .about-page .section-title{
+    font-size: 2.6rem;  
+  }
+  .about-page .section-description{
+    font-size: 1rem;   
+    padding-bottom: 35px;
+  }
+  .chart-content{
+    margin-left: 0;
+    font-size: 2em;
+  }
+  .our-story p{
+    font-size: 1rem;
+  }
+  .about-page .about-details{
+    padding-top: 30px;
+  }
+  .about-page .item-details {
+    font-size: 0.9em;
+    padding-top: 8px;
+    line-height: 20px;
+  }
+  .about-page .member{
+    max-width: 44% !important;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-page blockquote{
+    font-size: 1.2rem;
+  }
+  .skills-details canvas{
+    height: 130px;
+    width: 130px;
+  }
+  .wpcf7-form-control-wrap textarea {
+    width: 60%;
+  }
+
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1180px) {
+  body{
+    margin:0;
+  }
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 5.6% !important;
+    top: 10% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .section-description{
+    font-size: 1em;  
+    padding-bottom: 35px;
+    line-height: 27px;
+  }
+  .about-details .item{
+    padding-bottom: 40px;
+  }
+  .item-details{
+    font-size: .8em;  
+  }
+  .cd-half-block:nth-of-type(2){
+    padding: 7% 8%;
+  }
+  .about-details .item{
+    padding-right: 15px;
+  }
+  .service-details .item{
+    padding-right: 7px;
+  }
+  .portfolio-details figure{
+    max-width: inherit;
+  }
+  .entry-title{
+    padding-bottom: 10px;
+  }
+  .entry-title a{
+    font-size: .9em;
+  }
+  .post-content {
+    padding-left: 70px;
+    text-align: justify;
+  }
+  .contactform input{
+    width: 47%;
+  }
+  .contactform textarea{
+    width: 61%; 
+  }
+  .contactform button{
+    margin: 41px 20px 0 0;
+  }
+  .address-details{
+    padding-top: 75px;
+  }
+  .contact-icon{
+    font-size: 1.2rem;
+    padding-bottom: 6px;
+  }
+  .section-title{
+    padding-bottom: 0;
+  }
+  span.mobile-no{
+    font-size: .8em;
+  }
+  address p{
+    font-size: .8rem;
+  }
+
+  /* Service Page */
+  .service-page   .section-description {
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  .service-page .service-details p, .service-page .our-success p{
+    font-size: 1rem;
+  }
+  .service-page .service-details .item{
+    padding-bottom: 25px;
+    font-size: .9em;
+    max-width: 49%;
+  }
+  .service-page .service-details .item p{
+    font-size: .94em;
+    line-height: 18px;
+  }
+  .service-page .our-success{
+    padding-top: 35px;
+  }
+  .success-counter .item-icon{
+    font-size: 2em;
+    padding-bottom: 7px;
+  }
+  .success-counter .item-name{
+    font-size: 1.4em;
+  }
+  .success-counter .count{
+    font-size: 3em;
+  }
+  .other-services{
+    padding-top: 10px;
+  }
+  .list-items{
+    padding-top: 20px;
+  }
+  .list-items p{
+    font-size: .85em;
+    line-height: 18px;
+  }
+
+
+
+  /* About US */
+  .about-page .our-team{
+    padding-top: 40px;
+  }
+  .about-page .section-title{
+    font-size: 2.6rem;  
+  }
+  .about-page .section-description{
+    font-size: 1rem;   
+    padding-bottom: 35px;
+  }
+  .chart-content{
+    margin-left: 0;
+    font-size: 2em;
+  }
+  .our-story p{
+    font-size: 1rem;
+  }
+  .about-page .about-details{
+    padding-top: 30px;
+  }
+  .about-page .item-details {
+    font-size: 0.9em;
+    padding-top: 8px;
+    line-height: 20px;
+  }
+  .testimonial-slider label {
+    bottom: 10px;
+  }
+  .about-page .member{
+    max-width: 43% !important;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-page blockquote{
+    font-size: 1.2rem;
+  }
+  .skills-details canvas{
+    height: 130px;
+    width: 130px;
+  }
+  .about-details .item {
+    padding-right: 5px;
+  }
+  .about-page .member-social li a{
+    margin: 0;
+  }
+  .wpcf7-form-control-wrap textarea {
+    width: 60%;
+  }
+  .wpcf7-form input[type=submit] {
+    padding: 15px 60px 0px 60px;
+  }
+  .wpcf7-form .submit-button:before {
+    left: 35px;
+  }
+
+}
+
+
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  .main-title {
+    padding-top: 200px;
+  }
+  .sub-title {
+    margin-top: -85px;
+  }
+  .section-title{
+    padding-bottom: 20px;
+    font-size: 3.06rem;
+  }
+  .section-description{
+    font-size: 1rem;
+    line-height: 27px;
+    padding-bottom: 35px;
+  }
+  .entry-title a{
+    font-size: .9em;
+  }
+  .post-content {
+    padding-left: 70px;
+  }
+  .type-post {
+    padding-bottom: 30px;
+  }
+  .item-details {
+    font-size: .8em;
+  }
+  .about-details .item{
+    padding-bottom: 30px;
+  }
+  .item-title{
+    font-size: .85rem;
+  }
+  .portfolio-details figure{
+    max-width: inherit;
+    height: inherit;
+    width: 100%;
+  }
+  .entry-title{
+    font-size: 1rem;   
+  }
+  .entry-text,.comment-content p{
+    font-size: .8rem;  
+  }
+  .contactform input{
+    width: 45%;
+  }
+  .contactform textarea{
+    width: 61%;
+  }
+  .address-details{
+    padding-top: 25px;
+  }
+  .contactform button {
+    margin-right: 10px;
+  }
+
+
+  /* Service Page */
+  .service-page   .section-description {
+    padding-bottom: 30px;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .service-page .service-details p, .service-page .our-success p{
+    font-size: 1rem;
+  }
+  .service-page .service-details .item{
+    padding-bottom: 25px;
+    font-size: .9em;
+    max-width: 49%;
+  }
+  .service-page .service-details .item p{
+    font-size: .94em;
+    line-height: 18px;
+  }
+  .service-page .our-success{
+    padding-top: 35px;
+  }
+  .success-counter .item-icon{
+    font-size: 2em;
+    padding-bottom: 7px;
+  }
+  .success-counter .item-name{
+    font-size: 1.4em;
+  }
+  .success-counter .count{
+    font-size: 3em;
+  }
+  .other-services{
+    padding-top: 10px;
+  }
+  .list-items{
+    padding-top: 20px;
+  }
+  .list-items p{
+    font-size: .8em;
+    line-height: 22px;
+  }
+
+  /* About US */
+
+  .about-page p{
+    font-size: .9em;
+  }
+  .about-page .our-team{
+    padding-top: 30px;
+  }
+  .about-page .section-title{
+    font-size: 2.6rem;  
+  }
+  .about-page .section-description{
+    font-size: .9rem;
+    padding-bottom: 35px;
+  }
+  .chart-content{
+    margin-left: 0;
+    font-size: 2em;
+    left: 39%;
+  }
+  .our-story p, .our-team p{
+    font-size: .9rem;
+  }
+  .about-page .about-details{
+    padding-top: 30px;
+  }
+  .about-page .item-details {
+    font-size: 0.8em;
+    padding-top: 8px;
+    line-height: 20px;
+  }
+  .testimonial-slider label {
+    bottom: 10px;
+  }
+  .about-page .member{
+    max-width: 43% !important;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-page blockquote{
+    font-size: 1.2rem;
+  }
+  .skills-details canvas{
+    height: 130px;
+    width: 130px;
+  }
+  .about-details .item {
+    padding-right: 5px;
+  }
+  .about-page .member-social li a{
+    margin: 0;
+  }
+  .wpcf7-form-control-wrap textarea {
+    width: 60%;
+  }
+  .wpcf7-form input[type=submit] {
+    padding: 15px 60px 0px 60px;
+  }
+  .wpcf7-form .submit-button:before {
+    left: 35px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 800px) and (max-width: 979px) {
+
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 6% !important;
+    top: 11% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .overlay ul li a {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .next-section {
+    padding-top: 30px;
+  }
+  .cd-section h1{
+    font-size: 2.06rem;
+  }
+  .main-title {
+    padding-top: 200px;
+  }
+  .sub-title {
+    font-size: 20px;
+    margin-top: -80px;
+  }
+  .section-title{
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  .section-description {
+    font-size: .89rem;
+    line-height: 25px;
+    padding-bottom: 55px;
+  }
+  .member-name {
+    font-size: 1rem;
+  }
+  .item-details{
+    font-size: .75em;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+  .item-title{
+    font-size: 1rem;
+  }
+  .about-details .item{
+    padding-bottom: 35px;
+  }
+  .portfolio-details figure {
+    max-width: inherit;
+  }
+  .entry-title{
+    font-size: .95rem;
+  }
+  .entry-text, .comment-content p{
+    font-size: .78rem;
+    line-height: 20px;
+  }
+  .blog-details{
+    padding-right: 15px;
+  }
+  .contact-icon{
+    font-size: 1.18rem;
+  }
+  .address-details{
+    padding-top: 40px;
+  }
+  address p, span.mobile-no, .address-details a {
+    font-size: .7rem;
+    line-height: 15px;
+  }
+  .contactform input, .contactform textarea{
+    font-size: .7rem;
+    margin-bottom: 25px;
+  }
+
+  /* Service Page */
+
+  .service-page .section-description {
+    padding-bottom: 30px;
+    font-size: .8rem;
+    line-height: 20px;
+  }
+  .service-page .item-title {
+    font-size: .94rem;
+  }
+  .service-page .service-details p, .service-page .our-success p{
+    font-size: .8rem;
+  }
+  .service-page .service-details .item{
+    padding-bottom: 25px;
+    font-size: .85em;
+    max-width: 49%;
+  }
+  .service-page .service-details .item p{
+    font-size: .8em;
+    line-height: 18px;
+  }
+  .service-page .our-success{
+    padding-top: 35px;
+  }
+  .success-counter .item-icon{
+    font-size: 2em;
+    padding-bottom: 7px;
+  }
+  .success-counter .item-name{
+    font-size: 1.1em;
+  }
+  .success-counter .count{
+    font-size: 3em;
+  }
+  .other-services{
+    padding-top: 10px;
+  }
+  .other-services p{
+    font-size: .8em;
+  }
+  .list-items{
+    padding-top: 20px;
+  }
+  .list-items p{
+    font-size: .65em;
+    line-height: 22px;
+  }
+  .list-items li p{
+    padding-left: 10px;
+  }
+
+  /* About US */
+  .about-page p{
+    font-size: .8rem;
+    line-height: 20px;
+  }
+  .about-page .our-team{
+    padding-top: 30px;
+  }
+  .about-page .section-title{
+    font-size: 2.6rem;  
+  }
+  .about-page .section-description{
+    font-size: .8rem;
+    padding-bottom: 35px;
+  }
+  .chart-content{
+    margin-left: 0;
+    font-size: 2em;
+  }
+  .our-story p, .our-team p {
+    font-size: .8rem;
+    line-height: 20px;
+  }
+  .about-page .about-details{
+    padding-top: 30px;
+  }
+  .about-page .item-details {
+    font-size: 0.7em;
+    padding-top: 8px;
+    line-height: 20px;
+  }
+  .about-page .member{
+    max-width: 41% !important;  
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-page blockquote {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+  .skills-details canvas{
+    height: 130px;
+    width: 130px;
+  }
+  .about-details .item {
+    padding-right: 5px;
+  }
+  .about-page .member-social li a{
+    margin: 0;
+  }
+  .testimonial-slider h2{
+    font-size: 1.2em !important;
+  }
+  .testimonial-slider h6{
+    font-size: 1em !important;
+  }
+  .wpcf7-form-control-wrap textarea {
+    width: 60%;
+  }
+  .wpcf7-form input[type=submit] {
+    padding: 15px 50px 0px 50px;
+  }
+  .wpcf7-form .submit-button:before {
+    left: 25px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+  .overlay .overlay-close {
+    width: 20px !important;
+    height: 22px !important;
+    right: 6% !important;
+    top: 11% !important;
+  }
+  .overlay-genie.open nav {
+    left: 0%;
+  }
+  .next-section {
+    padding-top: 60px;
+  }
+  .section-title{
+    padding-bottom: 10px;
+    font-size: 2.8rem;
+  }
+  .section-title{
+    padding-bottom: 10px;
+    font-size: 3.06rem;
+  }
+  .section-description {
+    font-size: .89rem;
+    line-height: 25px;
+    padding-bottom: 55px;
+  }
+  .item-details{
+    font-size: .9em;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+  .item-title{
+    font-size: 1rem;
+  }
+  .about-details .item{
+    padding-bottom: 35px;
+  }
+  .service-details .item {
+    max-width: inherit;
+    width: 100%;
+  }
+  .member {
+    max-width: inherit;
+    height: inherit;
+  }
+  .portfolio-details figure {
+    max-width: inherit;
+  }
+  .entry-date {
+    font-size: .93rem;
+  }
+  .entry-date span {
+    font-size: 1em;
+  }
+  .entry-title{
+    font-size: .95rem;
+  }
+  .entry-text, .comment-content p {
+    font-size: .78rem;
+    line-height: 20px;
+  }
+  .post-content {
+    padding-left: 50px;
+  }
+  .blog-details{
+    padding-right: 15px;
+  }
+  .member-name{
+    font-size: 1rem;
+  }
+  .contact-icon{
+    font-size: 1.18rem;
+  }
+  .address-details{
+    padding-top: 40px !important;
+  }
+  address p, span.mobile-no, .address-details a {
+    font-size: .7rem;
+    line-height: 15px;
+  }
+  .contactform input, .contactform textarea{
+    font-size: .7rem;
+    margin-bottom: 25px;
+  }
+  .contactform input {
+    width: 45%;
+  }
+  .about-page .member-social li a {
+    width: 23px;
+    height: 27px;
+  }
+  .contactform textarea {
+    width: 60%;
+  }
+  .contactform button {
+    margin-right: 10px;
+    margin-top: 26px;
+  }
+  .cd-half-block:nth-of-type(2){
+    padding: 4% !important;
+  }
+  .service-page .section-1 .cd-half-block.left-side{
+    padding: 3% !important; 
+  }
+
+  /* Service Page */
+  .service-page .section-description {
+    padding-bottom: 30px;
+    font-size: .9rem;
+    line-height: 20px;
+  }
+  .service-page .item-title {
+    font-size: .94rem;
+  }
+  .service-page .service-details p, .service-page .our-success p{
+    font-size: .9rem;
+  }
+  .service-page .service-details .item{
+    padding-bottom: 25px;
+    font-size: .85em;
+    max-width: 49%;
+  }
+  .service-page .service-details .item p{
+    font-size: .9em;
+    line-height: 18px;
+  }
+  .service-page .our-success{
+    padding-top: 35px;
+  }
+  .success-counter .item-icon{
+    font-size: 2em;
+    padding-bottom: 7px;
+  }
+  .success-counter .item-name{
+    font-size: 1.1em;
+  }
+  .success-counter .count{
+    font-size: 3em;
+  }
+  .other-services{
+    padding-top: 10px;
+  }
+  .other-services p{
+    font-size: .8em;
+  }
+  .list-items{
+    padding-top: 20px;
+  }
+  .list-items p{
+    font-size: .65em;
+    line-height: 22px;
+  }
+  .list-items li p{
+    padding-left: 10px;
+  }
+
+
+  /* About US */
+
+  .about-page p{
+    font-size: .9rem;
+    line-height: 20px;
+  }
+  .about-page .our-team{
+    padding-top: 30px;
+  }
+  .about-page .section-title{
+    font-size: 2.6rem;  
+  }
+  .about-page .section-description{
+    font-size: .8rem;
+    padding-bottom: 35px;
+  }
+  .chart-content{
+    margin-left: 0;
+    font-size: 2em;
+    left: 38%;
+  }
+  .our-story p, .our-team p {
+    font-size: .9rem;
+    line-height: 20px;
+  }
+  .about-page .about-details{
+    padding-top: 30px;
+  }
+  .about-page .item-details {
+    font-size: 0.75em;
+    padding-top: 8px;
+    line-height: 20px;
+  }
+
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-details .item{
+    padding-bottom: 15px;
+  }
+  .about-page blockquote {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+  .slide img {
+    max-width: 150px;
+  }
+  .skills-details canvas{
+    height: 130px;
+    width: 130px;
+  }
+  .about-details .item {
+    padding-right: 5px;
+  }
+  .about-page .member-social li a{
+    margin: 0;
+  }
+  .testimonial-slider h2{
+    font-size: 1.2em !important;
+  }
+  .testimonial-slider h6{
+    font-size: 1em !important;
+  }
+  .wpcf7-form-control-wrap textarea {
+    width: 60%;
+  }
+  .wpcf7-form input[type=submit] {
+    padding: 15px 50px 0px 50px;
+  }
+  .wpcf7-form .submit-button:before {
+    left: 25px;
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 15px !important;
+  }
+  .menu-logo {
+    max-width: 70px;
+    margin-left: -35px;
+  }
+  .overlay ul li a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .cd-section {
+    margin-bottom: 30px;
+  }
+  .cd-section,
+  .cd-block,
+  .cd-half-block {
+    height: auto;
+
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;    
+  }
+  .homepage .cd-half-block:nth-of-type(1) {
+    height: 45vh;
+  }
+  .cd-half-block:nth-of-type(1),
+  .cd-section:first-of-type .cd-block {
+    height: auto;
+  }
+  .cd-half-block:nth-of-type(2) {
+    height: auto;
+    padding: 30px 15px;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  .section-description {
+    color: #595959;
+    font-size: 18px !important;
+    line-height: 25px;
+    font-weight: 300;
+    padding-bottom: 25px;
+  }
+  .about-details .item {
+    padding-bottom: 30px;
+  }
+  .service-details .item,
+  .member,
+  .portfolio-details figure,
+  .address-details .item,
+  .about-page .about-details .item {
+    max-width: initial;
+    width: 100%;
+    padding: 0 0 30px 0 !important;
+  }
+  .portfolio-details {
+    padding: 0;
+  }
+  .post-meta {
+    display: inline-block;
+    float: none;
+    text-align: center;
+  }
+  .entry-date {
+    font-size: 14px;
+    padding: 5px 10px 10px 10px;
+  }
+  .entry-date span {
+    font-size: 16px;
+  }
+  .post-content {
+    padding: 20px 0 0 0;
+  }
+  .entry-title {
+    font-size: 18px;
+  }
+  .google-map-container {
+    height: 45vh;
+  }
+  .contactform input,
+  .contactform textarea {
+    width: 100%;
+  }
+  .address-details {
+    padding-top: 100px !important;
+  }
+  .page-link {
+    float: none;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .testimonial-slider blockquote {
+    font-size: 18px;
+    padding: 20px 25px;    
+  }
+  .testimonial-slider .item img {
+    max-width: 100px;
+  }
+  .testimonial-slider h2 {
+    font-size: 24px;
+  }
+  .testimonial-slider h6 {
+    font-size: 14px;
+  } 
+  .slick-arrow {
+    bottom: -15px;
+  }
+  .success-counter .count {
+    font-size: 35px;
+  }
+  .success-counter .item-name {
+    font-size: 18px;
+  }
+  .progress-wrap {
+    width: 100%;
+  }
+  .copy-right {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .site-logo {
+    padding-top: 50px;
+  }
+  .main-title {
+    font-size: 30px !important;
+    padding-top: 150px;
+  }
+  .sub-title {
+    font-size: 18px;
+    margin-top: -100px;
+  }
+  .next-section {
+    padding-top: 30px;
+  }
+  .portfolioFilter a {
+    margin: 0 5px 10px;
+    padding: 5px 15px;
+  }
+}

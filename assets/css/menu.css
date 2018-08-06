@@ -1,0 +1,149 @@
+
+.site-logo {
+	/* width: 200px; */
+	/* height: 200px; */
+	text-align: center;
+}
+
+.showMenu {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+	position: fixed;
+	top: 10%;
+	z-index: 99;
+	right: 5%;
+}
+.showMenu:focus {
+	outline: 0;
+}
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	z-index: 3000;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(153,204,51,0.9);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close{
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	right: 5.75%;
+	top: 10%;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 60%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.overlay ul li a {
+	font-size: 22px;
+	line-height: 45px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #4d4d4d;
+}
+
+/* Effects */
+.overlay-genie {
+	background: transparent;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.2s, visibility 0s 0.6s;
+	transition: opacity 0.3s 0.2s, visibility 0s 0.6s;
+}
+
+.overlay-genie.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.overlay-genie svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.overlay-genie .overlay-path {
+	fill: rgba(233,110,79,.95);
+}
+
+/*.overlay-genie nav {
+	opacity: 0;
+	-webkit-transform: scale(0.8) translateY(-48%);
+	transform: scale(0.8) translateY(-48%);
+	-webkit-transition: opacity 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s, transform 0.3s 0.3s;
+}*/
+
+.overlay-genie .overlay-close {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.overlay-genie.open nav {
+	opacity: 1;
+}
+.overlay-genie.open .overlay-close{
+	cursor: pointer;
+	opacity: 1;
+	padding-top: 0%;
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;	
+}
+
+.overlay-genie.open nav {
+	-webkit-transform: scale(1) translateY(-50%);
+	transform: scale(1) translateY(-50%);
+}
+
+.overlay-genie.close nav,
+.overlay-genie.close .overlay-close {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
